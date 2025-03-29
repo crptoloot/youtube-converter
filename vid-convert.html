@@ -16,6 +16,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-YOUR_PUBLISHER_ID",
+            enable_page_level_ads: true
+        });
+    </script>
+    
     <style>
         :root {
             --primary-color: #ff0000;
@@ -272,6 +282,30 @@
 
         .download-btn i {
             margin-right: 8px;
+        }
+
+        /* AdSense Container Styles */
+        .ad-container {
+            margin: 30px auto;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: var(--border-radius);
+        }
+
+        .ad-container.horizontal {
+            max-width: 728px;
+            height: 90px;
+        }
+
+        .ad-container.vertical {
+            max-width: 300px;
+            height: 250px;
+        }
+
+        .ad-container.responsive {
+            width: 100%;
+            height: auto;
         }
 
         .features {
@@ -600,6 +634,17 @@
             .result p {
                 font-size: 0.9rem;
             }
+
+            /* Adjust ad containers for mobile */
+            .ad-container.horizontal {
+                max-width: 100%;
+                height: 100px;
+            }
+
+            .ad-container.vertical {
+                max-width: 100%;
+                height: 150px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -615,6 +660,15 @@
             .tab-btn {
                 padding: 8px 12px;
                 font-size: 14px;
+            }
+
+            /* Further adjust ads for very small screens */
+            .ad-container.horizontal {
+                height: 50px;
+            }
+
+            .ad-container.vertical {
+                height: 100px;
             }
         }
     </style>
@@ -638,6 +692,22 @@
             </nav>
         </div>
     </header>
+
+    <!-- Top Ad Banner -->
+    <div class="container">
+        <div class="ad-container horizontal">
+            <!-- AdSense Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 
     <section class="hero">
         <div class="container">
@@ -704,6 +774,22 @@
         </div>
     </section>
 
+    <!-- Middle Ad Banner -->
+    <div class="container">
+        <div class="ad-container responsive">
+            <!-- AdSense Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
@@ -736,6 +822,20 @@
                     <p>We don't store your files permanently and ensure your privacy is protected.</p>
                 </div>
                 
+                <!-- Vertical Ad in Features Grid -->
+                <div class="feature-card ad-container vertical">
+                    <!-- AdSense Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                         data-ad-slot="YOUR_AD_SLOT_ID"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-desktop"></i>
@@ -751,17 +851,25 @@
                     <h3>Unlimited Conversions</h3>
                     <p>Convert as many videos as you want without any limits or restrictions.</p>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h3>Completely Free</h3>
-                    <p>Our service is 100% free to use with no hidden charges or subscriptions.</p>
-                </div>
             </div>
         </div>
     </section>
+
+    <!-- Bottom Ad Banner -->
+    <div class="container">
+        <div class="ad-container horizontal">
+            <!-- AdSense Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
 
     <section class="how-to-use" id="how-to-use">
         <div class="container">
@@ -818,6 +926,20 @@
                     <div class="accordion-content">
                         <p>Conversion time depends on the length and quality of the video, but most conversions are completed within 10-30 seconds. Longer videos or higher quality formats may take slightly longer.</p>
                     </div>
+                </div>
+                
+                <!-- In-content Ad in FAQ -->
+                <div class="ad-container responsive" style="margin: 30px auto;">
+                    <!-- AdSense Ad -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                         data-ad-slot="YOUR_AD_SLOT_ID"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
                 
                 <div class="accordion-item">
@@ -1024,6 +1146,12 @@
                     }
                 }
             });
+        });
+
+        // Initialize AdSense ads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load additional ads if needed
+            (adsbygoogle = window.adsbygoogle || []).push({});
         });
     </script>
 </body>
